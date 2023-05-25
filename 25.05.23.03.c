@@ -7,10 +7,12 @@ void main() {
 	
 	for (i=0; i<5; i++) {
 		printf ("Nhap gia tri %d:", i+1);
-		scanf ("%d", &mang[i]);	
+		scanf ("%d", &mang[i]);
 		
-		min = mang[0];
-	if (min > mang[i])
+		if (i==0)
+			min = mang[0];
+		else
+		if (min > mang[i])
 		min = mang[i];
 	
 	total += mang[i];
